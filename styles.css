@@ -1,0 +1,62 @@
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0 0 0 /0.5);
+  }
+  
+  .accordion[open] {
+    background-color: salmon;
+  }
+  
+  .accordion__summary {
+    list-style: none;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion__content {
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+  }
+
+
+  while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
+    }
+
+    /* Write your code below. Good luck! 🙂 */
+function calcTip(bill) {
+  if ( bill >= 50 && bill <= 300) {
+  return bill*0.15 
+  } else {
+  return bill*0.2 
+  } 
+}
+const bills = [125,555,44];
+const tips = [];
+tips.push(calcTip(bills[0]));
+tips.push(calcTip(bills[1]));
+tips.push(calcTip(bills[2]));
+const totals = [];
+totals.push(bills[0]+tips[0])
+totals.push(bills[1]+tips[1])
+totals.push(bills[2]+tips[2])
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [
+    22, 295, 176, 440, 37, 105, 10, 1100, 86, 52
+    ];
+
+const tips = [];
+const totals = [];
+
+for(let i = 0 ; i < 10 ; i++) {
+    tips.push(calcTip(bills[i]));
+    totals.push(calcTip(bills[i])+ bills[i]);
+}  
